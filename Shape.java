@@ -1,23 +1,23 @@
 package Shapes;
-
+import java.lang.*;
 class ShapeTest {
     public static void main(String[] args) {
-        ShapeInt menu = new ShapeInt();
+        Shapes menu = new Shapes();
 
         //Quad
-        menu.shapic(new ShapeInt.Quad());
+        menu.shapic(new Shapes.Quad());
         //Circle
-        menu.shapic(new ShapeInt.Circle());
+        menu.shapic(new Shapes.Circle());
         //Oval
-        menu.shapic(new ShapeInt.Oval());
+        menu.shapic(new Shapes.Oval());
         //Rectangle
-        menu.shapic(new ShapeInt.Rectangle());
+        menu.shapic(new Shapes.Rectangle());
         //Pentagon
-        menu.shapic(new ShapeInt.Pentagon());
+        menu.shapic(new Shapes.Pentagon());
     }
 }
 
-class ShapeInt {
+class Shapes {
 
     abstract static class Shape {
         abstract String getName();
@@ -48,7 +48,7 @@ class ShapeInt {
     static class Rectangle extends Shape {
         @Override
         String getName() {
-            return "Reqtangle";
+            return "Rectangle";
         }
     }
 
