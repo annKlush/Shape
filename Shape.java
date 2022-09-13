@@ -1,8 +1,24 @@
 package Shapes;
 
+class ShapeTest {
+    public static void main(String[] args) {
+        ShapeInt menu = new ShapeInt();
+
+        //Quad
+        menu.shapic(new ShapeInt.Quad());
+        //Circle
+        menu.shapic(new ShapeInt.Circle());
+        //Oval
+        menu.shapic(new ShapeInt.Oval());
+        //Rectangle
+        menu.shapic(new ShapeInt.Rectangle());
+        //Pentagon
+        menu.shapic(new ShapeInt.Pentagon());
+    }
+}
 
 class ShapeInt {
-    
+
     abstract static class Shape {
         abstract String getName();
 
@@ -29,7 +45,7 @@ class ShapeInt {
         }
     }
 
-    static class Reqtangle extends Shape {
+    static class Rectangle extends Shape {
         @Override
         String getName() {
             return "Reqtangle";
@@ -50,19 +66,3 @@ class ShapeInt {
 }
 
 
-class GameMenuTest {
-    public static void main(String[] args) {
-        ShapeInt menu = new ShapeInt();
-
-        //Quad
-        menu.shapic(new ShapeInt.Quad());
-        //Circle
-        menu.shapic(new ShapeInt.Circle());
-        //Oval
-        menu.shapic(new ShapeInt.Oval());
-        //Reqtangle
-        menu.shapic(new ShapeInt.Reqtangle());
-        //Pentagon
-        menu.shapic(new ShapeInt.Pentagon());
-    }
-}
