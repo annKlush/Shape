@@ -2,6 +2,7 @@ package Shapes;
 
 
 class ShapeInt {
+    
     abstract static class Shape {
         abstract String getName();
 
