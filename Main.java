@@ -1,11 +1,18 @@
 package Shapes;
 
 public class Main {
-    public static void main(String[] args) {
-        Shape circle=new Circle();
+         Shape circle=new Circle();
+        Shape rectangle=new Rectangle();
+        Shape pentagon=new Pentagon();
+        Shape oval=new Oval();
+        Shape qued=new Quad();
         MainTest print=new MainTest();
 
-        print.printName(circle);
+        print.name(circle);
+        print.name(rectangle);
+        print.name(pentagon);
+        print.name(oval);
+        print.name(qued);
 
     }
 }
